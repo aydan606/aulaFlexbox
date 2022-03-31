@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Order</title>
+    <style>
+
+        .flex-container {
+            display: flex;
+            max-width: 500px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .items {
+            flex: 1;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        .order-4 {
+            order: 4;
+        }
+
+        .order-5 {
+            order: 5;
+        }
+
+        .order-6 {
+            order: 6;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1> Linhas</h1>
+    <h3>Order 0</h3>
+    <div class="flex-container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+    </div>
+
+    <h3>Order Mix</h3>
+    <div class="flex-container">
+        <div class="items order-2">1</div>
+        <div class="items order-4">2</div>
+        <div class="items order-6">3</div>
+        <div class="items order-1">4</div>
+        <div class="items order-3">5</div>
+        <div class="items order-5">6</div>
+    </div>
+
+    <h1>Colunas</h1>
+    <h3>Order 0</h3>
+    <div class="flex-container column">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+    </div>
+
+    <h3>Order Mix</h3>
+    <div class="flex-container column">
+        <div class="items order-2">1</div>
+        <div class="items order-4">2</div>
+        <div class="items order-6">3</div>
+        <div class="items order-1">4</div>
+        <div class="items order-3">5</div>
+        <div class="items order-5">6</div>
+    </div>
+</body>
+</html>

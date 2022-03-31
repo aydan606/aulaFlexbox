@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self</title>
+    <style>
+
+        .flex-container {
+            display: flex;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            max-width: 400px;
+        }
+
+        .items {
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .align-container {
+            align-items: center;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Linha</h1>
+    <section class="flex-container align-container">
+        <div class="items auto">AAAA</div>
+        <div class="items auto">BBBB BBBBBBB BBBB BBB BBBB BB</div>
+        <div class="items auto">454683</div>
+        <div class="items auto">Cansado</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="items center">AAAA</div>
+        <div class="items start">BBBBB BBBBBBBBBB BBBBB BBBBB BBBBB</div>
+        <div class="items stretch">454683</div>
+        <div class="items end">Cansado</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="items center">AAAA</div>
+        <div class="items start">AAAAA AAA AAAA</div>
+        <div class="items enter">AAAAA AAAA AAA AAAAAAAAA AAAAAA AA AAA AAAA</div>
+    </section>
+
+    <h1>Coluna</h1>
+    <section class="flex-container align-container column">
+        <div class="items auto">AAAA</div>
+        <div class="items auto">BBBB BBBBBBB BBBB BBB BBBB BB</div>
+        <div class="items auto">454683</div>
+        <div class="items auto">Cansado</div>
+    </section>
+
+    <section class="flex-container column">
+        <div class="items center">AAAA</div>
+        <div class="items stretch">BBBBB BBBBBBBBBB BBBBB BBBBB BBBBB</div>
+        <div class="items start">454683</div>
+        <div class="items end">Cansado</div>
+    </section>
+
+    <section class="flex-container column">
+        <div class="items center">AAAA</div>
+        <div class="items start">AAAAA AAA AAAA</div>
+        <div class="items enter">AAAAA AAAA AAA AAAAAAAAA AAAAAA AA AAA AAAA</div>
+    </section>
+
+</body>
+</html>
